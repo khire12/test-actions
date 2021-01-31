@@ -35,7 +35,7 @@ jobs:
            pip install pylint
            pip install autopep8   
       - name: autopep codes
-        run: autopep8 *.py     
+        run: autopep8 --in-place *.py     
       - name: lint codes
         run: pylint *.py
     
