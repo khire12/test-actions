@@ -17,5 +17,5 @@ class Apple:
 k=1
 apple = Apple("red")
 apple.repeat_color()
-
+break
 
