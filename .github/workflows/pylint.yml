@@ -32,7 +32,10 @@ jobs:
       - name: Install dependencies
         run: |
            python -m pip install --upgrade pip
-           pip install pylint   
+           pip install pylint
+           pip install autopep8   
            
       - name: lint codes
         run: pylint *.py
+      - name: autopep codes
+        run: autopep8 *.py
